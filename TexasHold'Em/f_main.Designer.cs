@@ -1,0 +1,135 @@
+﻿
+namespace TexasHold_Em
+{
+    partial class f_main
+    {
+        /// <summary>
+        /// Erforderliche Designervariable.
+        /// </summary>
+        private System.ComponentModel.IContainer components = null;
+
+        /// <summary>
+        /// Verwendete Ressourcen bereinigen.
+        /// </summary>
+        /// <param name="disposing">True, wenn verwaltete Ressourcen gelöscht werden sollen; andernfalls False.</param>
+        protected override void Dispose(bool disposing)
+        {
+            if (disposing && (components != null))
+            {
+                components.Dispose();
+            }
+            base.Dispose(disposing);
+        }
+
+        #region Vom Windows Form-Designer generierter Code
+
+        /// <summary>
+        /// Erforderliche Methode für die Designerunterstützung.
+        /// Der Inhalt der Methode darf nicht mit dem Code-Editor geändert werden.
+        /// </summary>
+        private void InitializeComponent()
+        {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(f_main));
+            this.btn_call = new System.Windows.Forms.Button();
+            this.btn_draw = new System.Windows.Forms.Button();
+            this.btn_fold = new System.Windows.Forms.Button();
+            this.btn_bet = new System.Windows.Forms.Button();
+            this.btn_check = new System.Windows.Forms.Button();
+            this.btn_leave = new System.Windows.Forms.Button();
+            this.SuspendLayout();
+            // 
+            // btn_call
+            // 
+            this.btn_call.BackColor = System.Drawing.Color.ForestGreen;
+            this.btn_call.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.btn_call.Location = new System.Drawing.Point(184, 530);
+            this.btn_call.Name = "btn_call";
+            this.btn_call.Size = new System.Drawing.Size(147, 105);
+            this.btn_call.TabIndex = 0;
+            this.btn_call.Text = "Call";
+            this.btn_call.UseVisualStyleBackColor = false;
+            // 
+            // btn_draw
+            // 
+            this.btn_draw.BackColor = System.Drawing.Color.ForestGreen;
+            this.btn_draw.Location = new System.Drawing.Point(337, 530);
+            this.btn_draw.Name = "btn_draw";
+            this.btn_draw.Size = new System.Drawing.Size(147, 105);
+            this.btn_draw.TabIndex = 1;
+            this.btn_draw.Text = "Draw";
+            this.btn_draw.UseVisualStyleBackColor = false;
+            // 
+            // btn_fold
+            // 
+            this.btn_fold.BackColor = System.Drawing.Color.ForestGreen;
+            this.btn_fold.Location = new System.Drawing.Point(490, 530);
+            this.btn_fold.Name = "btn_fold";
+            this.btn_fold.Size = new System.Drawing.Size(147, 105);
+            this.btn_fold.TabIndex = 2;
+            this.btn_fold.Text = "Fold";
+            this.btn_fold.UseVisualStyleBackColor = false;
+            // 
+            // btn_bet
+            // 
+            this.btn_bet.BackColor = System.Drawing.Color.ForestGreen;
+            this.btn_bet.Location = new System.Drawing.Point(643, 530);
+            this.btn_bet.Name = "btn_bet";
+            this.btn_bet.Size = new System.Drawing.Size(147, 105);
+            this.btn_bet.TabIndex = 3;
+            this.btn_bet.Text = "Bet";
+            this.btn_bet.UseVisualStyleBackColor = false;
+            // 
+            // btn_check
+            // 
+            this.btn_check.BackColor = System.Drawing.Color.ForestGreen;
+            this.btn_check.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.btn_check.Location = new System.Drawing.Point(796, 530);
+            this.btn_check.Name = "btn_check";
+            this.btn_check.Size = new System.Drawing.Size(147, 105);
+            this.btn_check.TabIndex = 4;
+            this.btn_check.Text = "Check";
+            this.btn_check.UseVisualStyleBackColor = false;
+            // 
+            // btn_leave
+            // 
+            this.btn_leave.BackColor = System.Drawing.Color.ForestGreen;
+            this.btn_leave.Location = new System.Drawing.Point(949, 530);
+            this.btn_leave.Name = "btn_leave";
+            this.btn_leave.Size = new System.Drawing.Size(147, 105);
+            this.btn_leave.TabIndex = 5;
+            this.btn_leave.Text = "Leave";
+            this.btn_leave.UseVisualStyleBackColor = false;
+            this.btn_leave.Click += new System.EventHandler(this.btn_leave_Click);
+            // 
+            // f_main
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.DarkOliveGreen;
+            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.ClientSize = new System.Drawing.Size(1246, 647);
+            this.ControlBox = false;
+            this.Controls.Add(this.btn_leave);
+            this.Controls.Add(this.btn_check);
+            this.Controls.Add(this.btn_bet);
+            this.Controls.Add(this.btn_fold);
+            this.Controls.Add(this.btn_draw);
+            this.Controls.Add(this.btn_call);
+            this.Name = "f_main";
+            this.Text = "Main";
+            this.ResumeLayout(false);
+
+        }
+
+        #endregion
+
+        private System.Windows.Forms.Button btn_call;
+        private System.Windows.Forms.Button btn_draw;
+        private System.Windows.Forms.Button btn_fold;
+        private System.Windows.Forms.Button btn_bet;
+        private System.Windows.Forms.Button btn_check;
+        private System.Windows.Forms.Button btn_leave;
+    }
+}
+

@@ -10,11 +10,18 @@ using System.Windows.Forms;
 
 namespace TexasHold_Em
 {
-    public partial class Form1 : Form
+    public partial class f_pregister : Form
     {
-        public Form1()
+        public f_pregister()
         {
             InitializeComponent();
+        }
+
+        private void btn_register_Click(object sender, EventArgs e)
+        {
+            f_login login = new f_login();
+            this.Close();
+            login.Show();
         }
     }
 }
