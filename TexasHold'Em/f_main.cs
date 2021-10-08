@@ -15,7 +15,7 @@ namespace TexasHold_Em
         public f_main()
         {
             int playercount = 0;
-           
+           //t_pm = Timer per Move
             InitializeComponent();
         }
 

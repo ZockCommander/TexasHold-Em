@@ -21,6 +21,7 @@ namespace TexasHold_Em
 
         private void btn_Guest_Click(object sender, EventArgs e)
         {
+            //If you play as Guest you are immidiately thrown to the playing groundss
             f_main main = new f_main();
             this.Hide();
             main.Show();
@@ -29,6 +30,7 @@ namespace TexasHold_Em
 
         private void btn_quit_Click(object sender, EventArgs e)
         {
+            //Closes every single form that exists in this Programm
             MessageBox.Show("I really appreciate you playing my game. Hoping to see you soon.", "Thanks for playing!", MessageBoxButtons.OK, MessageBoxIcon.Asterisk);
             this.Dispose();
             Environment.Exit(0);
@@ -36,15 +38,16 @@ namespace TexasHold_Em
 
         private void btn_login_Click(object sender, EventArgs e)
         {
+            //Let's the Player login to the main menu if his account data is provided in the Database
             f_plogin plogin = new f_plogin();
-            this.Hide();
             plogin.Show();
+            this.Close();
         }
 
         private void btn_register_Click(object sender, EventArgs e)
         {
+            //The new Player can create an Account which will be automatically saved into the Database
             f_pregister pregister = new f_pregister();
-            this.Hide();
             pregister.Show();
         }
     }

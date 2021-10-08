@@ -29,6 +29,7 @@ namespace TexasHold_Em
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(f_main));
             this.btn_call = new System.Windows.Forms.Button();
             this.btn_draw = new System.Windows.Forms.Button();
@@ -36,6 +37,7 @@ namespace TexasHold_Em
             this.btn_bet = new System.Windows.Forms.Button();
             this.btn_check = new System.Windows.Forms.Button();
             this.btn_leave = new System.Windows.Forms.Button();
+            this.t_pm = new System.Windows.Forms.Timer(this.components);
             this.SuspendLayout();
             // 
             // btn_call
@@ -101,6 +103,10 @@ namespace TexasHold_Em
             this.btn_leave.UseVisualStyleBackColor = false;
             this.btn_leave.Click += new System.EventHandler(this.btn_leave_Click);
             // 
+            // t_pm
+            // 
+            this.t_pm.Enabled = true;
+            // 
             // f_main
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -130,6 +136,7 @@ namespace TexasHold_Em
         private System.Windows.Forms.Button btn_bet;
         private System.Windows.Forms.Button btn_check;
         private System.Windows.Forms.Button btn_leave;
+        private System.Windows.Forms.Timer t_pm;
     }
 }
 

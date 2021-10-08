@@ -59,6 +59,12 @@
     <Compile Include="Greetings.Designer.cs">
       <DependentUpon>Greetings.cs</DependentUpon>
     </Compile>
+    <Compile Include="Htp.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Htp.Designer.cs">
+      <DependentUpon>Htp.cs</DependentUpon>
+    </Compile>
     <Compile Include="Login.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -79,11 +85,20 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Stats.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Stats.Designer.cs">
+      <DependentUpon>Stats.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="f_main.resx">
       <DependentUpon>f_main.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Greetings.resx">
       <DependentUpon>Greetings.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Htp.resx">
+      <DependentUpon>Htp.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Login.resx">
       <DependentUpon>Login.cs</DependentUpon>
@@ -103,6 +118,9 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="Stats.resx">
+      <DependentUpon>Stats.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>

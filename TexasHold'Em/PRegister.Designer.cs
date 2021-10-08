@@ -37,9 +37,9 @@ namespace TexasHold_Em
             // 
             // btn_register
             // 
-            this.btn_register.Location = new System.Drawing.Point(213, 294);
+            this.btn_register.Location = new System.Drawing.Point(60, 261);
             this.btn_register.Name = "btn_register";
-            this.btn_register.Size = new System.Drawing.Size(321, 109);
+            this.btn_register.Size = new System.Drawing.Size(154, 109);
             this.btn_register.TabIndex = 0;
             this.btn_register.Text = "Register";
             this.btn_register.UseVisualStyleBackColor = true;
@@ -48,7 +48,7 @@ namespace TexasHold_Em
             // lbl_name
             // 
             this.lbl_name.AutoSize = true;
-            this.lbl_name.Location = new System.Drawing.Point(172, 52);
+            this.lbl_name.Location = new System.Drawing.Point(57, 44);
             this.lbl_name.Name = "lbl_name";
             this.lbl_name.Size = new System.Drawing.Size(35, 13);
             this.lbl_name.TabIndex = 1;
@@ -57,7 +57,7 @@ namespace TexasHold_Em
             // lbl_password
             // 
             this.lbl_password.AutoSize = true;
-            this.lbl_password.Location = new System.Drawing.Point(172, 87);
+            this.lbl_password.Location = new System.Drawing.Point(57, 86);
             this.lbl_password.Name = "lbl_password";
             this.lbl_password.Size = new System.Drawing.Size(53, 13);
             this.lbl_password.TabIndex = 2;
@@ -66,7 +66,7 @@ namespace TexasHold_Em
             // lbl_confirm
             // 
             this.lbl_confirm.AutoSize = true;
-            this.lbl_confirm.Location = new System.Drawing.Point(172, 118);
+            this.lbl_confirm.Location = new System.Drawing.Point(57, 124);
             this.lbl_confirm.Name = "lbl_confirm";
             this.lbl_confirm.Size = new System.Drawing.Size(42, 13);
             this.lbl_confirm.TabIndex = 3;
@@ -76,7 +76,7 @@ namespace TexasHold_Em
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(249, 389);
             this.Controls.Add(this.lbl_confirm);
             this.Controls.Add(this.lbl_password);
             this.Controls.Add(this.lbl_name);

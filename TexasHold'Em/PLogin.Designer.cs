@@ -37,7 +37,7 @@ namespace TexasHold_Em
             // lbl_name
             // 
             this.lbl_name.AutoSize = true;
-            this.lbl_name.Location = new System.Drawing.Point(204, 51);
+            this.lbl_name.Location = new System.Drawing.Point(45, 43);
             this.lbl_name.Name = "lbl_name";
             this.lbl_name.Size = new System.Drawing.Size(35, 13);
             this.lbl_name.TabIndex = 0;
@@ -46,7 +46,7 @@ namespace TexasHold_Em
             // lbl_password
             // 
             this.lbl_password.AutoSize = true;
-            this.lbl_password.Location = new System.Drawing.Point(204, 93);
+            this.lbl_password.Location = new System.Drawing.Point(27, 87);
             this.lbl_password.Name = "lbl_password";
             this.lbl_password.Size = new System.Drawing.Size(53, 13);
             this.lbl_password.TabIndex = 1;
@@ -54,7 +54,7 @@ namespace TexasHold_Em
             // 
             // btn_plogin
             // 
-            this.btn_plogin.Location = new System.Drawing.Point(201, 161);
+            this.btn_plogin.Location = new System.Drawing.Point(21, 225);
             this.btn_plogin.Name = "btn_plogin";
             this.btn_plogin.Size = new System.Drawing.Size(143, 78);
             this.btn_plogin.TabIndex = 2;
@@ -66,7 +66,7 @@ namespace TexasHold_Em
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(205, 336);
             this.Controls.Add(this.btn_plogin);
             this.Controls.Add(this.lbl_password);
             this.Controls.Add(this.lbl_name);

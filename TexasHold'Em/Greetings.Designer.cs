@@ -30,7 +30,7 @@ namespace TexasHold_Em
         private void InitializeComponent()
         {
             this.btn_start = new System.Windows.Forms.Button();
-            this.btn_score = new System.Windows.Forms.Button();
+            this.btn_stats = new System.Windows.Forms.Button();
             this.btn_htp = new System.Windows.Forms.Button();
             this.btn_logout = new System.Windows.Forms.Button();
             this.SuspendLayout();
@@ -45,14 +45,15 @@ namespace TexasHold_Em
             this.btn_start.UseVisualStyleBackColor = true;
             this.btn_start.Click += new System.EventHandler(this.btn_start_Click);
             // 
-            // btn_score
+            // btn_stats
             // 
-            this.btn_score.Location = new System.Drawing.Point(273, 137);
-            this.btn_score.Name = "btn_score";
-            this.btn_score.Size = new System.Drawing.Size(174, 100);
-            this.btn_score.TabIndex = 1;
-            this.btn_score.Text = "Score";
-            this.btn_score.UseVisualStyleBackColor = true;
+            this.btn_stats.Location = new System.Drawing.Point(273, 137);
+            this.btn_stats.Name = "btn_stats";
+            this.btn_stats.Size = new System.Drawing.Size(174, 100);
+            this.btn_stats.TabIndex = 1;
+            this.btn_stats.Text = "Stats";
+            this.btn_stats.UseVisualStyleBackColor = true;
+            this.btn_stats.Click += new System.EventHandler(this.btn_stats_Click);
             // 
             // btn_htp
             // 
@@ -62,6 +63,7 @@ namespace TexasHold_Em
             this.btn_htp.TabIndex = 2;
             this.btn_htp.Text = "How to Play";
             this.btn_htp.UseVisualStyleBackColor = true;
+            this.btn_htp.Click += new System.EventHandler(this.btn_htp_Click);
             // 
             // btn_logout
             // 
@@ -80,7 +82,7 @@ namespace TexasHold_Em
             this.ClientSize = new System.Drawing.Size(800, 457);
             this.Controls.Add(this.btn_logout);
             this.Controls.Add(this.btn_htp);
-            this.Controls.Add(this.btn_score);
+            this.Controls.Add(this.btn_stats);
             this.Controls.Add(this.btn_start);
             this.Name = "f_greetings";
             this.Text = "Hello";
@@ -91,7 +93,7 @@ namespace TexasHold_Em
         #endregion
 
         private System.Windows.Forms.Button btn_start;
-        private System.Windows.Forms.Button btn_score;
+        private System.Windows.Forms.Button btn_stats;
         private System.Windows.Forms.Button btn_htp;
         private System.Windows.Forms.Button btn_logout;
     }
