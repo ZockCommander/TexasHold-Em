@@ -32,7 +32,6 @@ namespace TexasHold_Em
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(f_main));
             this.btn_call = new System.Windows.Forms.Button();
-            this.btn_draw = new System.Windows.Forms.Button();
             this.btn_fold = new System.Windows.Forms.Button();
             this.btn_bet = new System.Windows.Forms.Button();
             this.btn_check = new System.Windows.Forms.Button();
@@ -44,27 +43,17 @@ namespace TexasHold_Em
             // 
             this.btn_call.BackColor = System.Drawing.Color.ForestGreen;
             this.btn_call.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.btn_call.Location = new System.Drawing.Point(184, 530);
+            this.btn_call.Location = new System.Drawing.Point(246, 530);
             this.btn_call.Name = "btn_call";
             this.btn_call.Size = new System.Drawing.Size(147, 105);
             this.btn_call.TabIndex = 0;
             this.btn_call.Text = "Call";
             this.btn_call.UseVisualStyleBackColor = false;
             // 
-            // btn_draw
-            // 
-            this.btn_draw.BackColor = System.Drawing.Color.ForestGreen;
-            this.btn_draw.Location = new System.Drawing.Point(337, 530);
-            this.btn_draw.Name = "btn_draw";
-            this.btn_draw.Size = new System.Drawing.Size(147, 105);
-            this.btn_draw.TabIndex = 1;
-            this.btn_draw.Text = "Draw";
-            this.btn_draw.UseVisualStyleBackColor = false;
-            // 
             // btn_fold
             // 
             this.btn_fold.BackColor = System.Drawing.Color.ForestGreen;
-            this.btn_fold.Location = new System.Drawing.Point(490, 530);
+            this.btn_fold.Location = new System.Drawing.Point(399, 530);
             this.btn_fold.Name = "btn_fold";
             this.btn_fold.Size = new System.Drawing.Size(147, 105);
             this.btn_fold.TabIndex = 2;
@@ -74,7 +63,7 @@ namespace TexasHold_Em
             // btn_bet
             // 
             this.btn_bet.BackColor = System.Drawing.Color.ForestGreen;
-            this.btn_bet.Location = new System.Drawing.Point(643, 530);
+            this.btn_bet.Location = new System.Drawing.Point(552, 530);
             this.btn_bet.Name = "btn_bet";
             this.btn_bet.Size = new System.Drawing.Size(147, 105);
             this.btn_bet.TabIndex = 3;
@@ -85,7 +74,7 @@ namespace TexasHold_Em
             // 
             this.btn_check.BackColor = System.Drawing.Color.ForestGreen;
             this.btn_check.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.btn_check.Location = new System.Drawing.Point(796, 530);
+            this.btn_check.Location = new System.Drawing.Point(705, 530);
             this.btn_check.Name = "btn_check";
             this.btn_check.Size = new System.Drawing.Size(147, 105);
             this.btn_check.TabIndex = 4;
@@ -95,7 +84,7 @@ namespace TexasHold_Em
             // btn_leave
             // 
             this.btn_leave.BackColor = System.Drawing.Color.ForestGreen;
-            this.btn_leave.Location = new System.Drawing.Point(949, 530);
+            this.btn_leave.Location = new System.Drawing.Point(858, 530);
             this.btn_leave.Name = "btn_leave";
             this.btn_leave.Size = new System.Drawing.Size(147, 105);
             this.btn_leave.TabIndex = 5;
@@ -106,6 +95,8 @@ namespace TexasHold_Em
             // t_pm
             // 
             this.t_pm.Enabled = true;
+            this.t_pm.Interval = 30000;
+            this.t_pm.Tick += new System.EventHandler(this.t_pm_Tick);
             // 
             // f_main
             // 
@@ -120,7 +111,6 @@ namespace TexasHold_Em
             this.Controls.Add(this.btn_check);
             this.Controls.Add(this.btn_bet);
             this.Controls.Add(this.btn_fold);
-            this.Controls.Add(this.btn_draw);
             this.Controls.Add(this.btn_call);
             this.Name = "f_main";
             this.Text = "Main";
@@ -131,7 +121,6 @@ namespace TexasHold_Em
         #endregion
 
         private System.Windows.Forms.Button btn_call;
-        private System.Windows.Forms.Button btn_draw;
         private System.Windows.Forms.Button btn_fold;
         private System.Windows.Forms.Button btn_bet;
         private System.Windows.Forms.Button btn_check;

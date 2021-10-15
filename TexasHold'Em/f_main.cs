@@ -14,7 +14,7 @@ namespace TexasHold_Em
     {
         public f_main()
         {
-            int playercount = 0;
+          // int playercount = 0;
            //t_pm = Timer per Move
             InitializeComponent();
         }
@@ -25,6 +25,16 @@ namespace TexasHold_Em
             f_greetings greeting = new f_greetings();
             this.Close();
             greeting.Show();
+        }
+
+        private void t_pm_Tick(object sender, EventArgs e)
+        {
+          //Checks if the 30 sec have run out
+            if(t_pm.Interval == 30000)
+            {
+                MessageBox.Show("The time has run out!", "Too Bad", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+
         }
     }
 }

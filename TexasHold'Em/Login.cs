@@ -41,7 +41,8 @@ namespace TexasHold_Em
             //Let's the Player login to the main menu if his account data is provided in the Database
             f_plogin plogin = new f_plogin();
             plogin.Show();
-            this.Close();
+            this.Hide();
+
         }
 
         private void btn_register_Click(object sender, EventArgs e)
