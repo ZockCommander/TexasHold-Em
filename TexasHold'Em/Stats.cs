@@ -24,5 +24,12 @@ namespace TexasHold_Em
             this.Close();
             greet.Show();
         }
+
+        private void f_stats_Load(object sender, EventArgs e)
+        {
+            f_plogin f_Plogin = new f_plogin();
+           
+            
+        }
     }
 }

@@ -35,6 +35,7 @@ namespace TexasHold_Em
             this.lbl_bal = new System.Windows.Forms.Label();
             this.lbl_pg = new System.Windows.Forms.Label();
             this.pb_lvl = new System.Windows.Forms.ProgressBar();
+            this.lbl_pname = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // btn_back
@@ -91,11 +92,20 @@ namespace TexasHold_Em
             this.pb_lvl.Size = new System.Drawing.Size(629, 21);
             this.pb_lvl.TabIndex = 5;
             // 
+            // lbl_pname
+            // 
+            this.lbl_pname.AutoSize = true;
+            this.lbl_pname.Location = new System.Drawing.Point(47, 41);
+            this.lbl_pname.Name = "lbl_pname";
+            this.lbl_pname.Size = new System.Drawing.Size(0, 13);
+            this.lbl_pname.TabIndex = 6;
+            // 
             // f_stats
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.lbl_pname);
             this.Controls.Add(this.pb_lvl);
             this.Controls.Add(this.lbl_pg);
             this.Controls.Add(this.lbl_bal);
@@ -104,6 +114,7 @@ namespace TexasHold_Em
             this.Controls.Add(this.btn_back);
             this.Name = "f_stats";
             this.Text = "Stats";
+            this.Load += new System.EventHandler(this.f_stats_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -117,5 +128,6 @@ namespace TexasHold_Em
         private System.Windows.Forms.Label lbl_bal;
         private System.Windows.Forms.Label lbl_pg;
         private System.Windows.Forms.ProgressBar pb_lvl;
+        public System.Windows.Forms.Label lbl_pname;
     }
 }

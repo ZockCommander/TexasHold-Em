@@ -32,7 +32,7 @@ namespace TexasHold_Em
           //Checks if the 30 sec have run out
             if(t_pm.Interval == 30000)
             {
-                MessageBox.Show("The time has run out!", "Too Bad", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("The time has run out!", "Time", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
 
         }

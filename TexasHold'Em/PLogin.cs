@@ -15,6 +15,7 @@ namespace TexasHold_Em
         public f_plogin()
         {
             InitializeComponent();
+            
         }
 
         private void btn_plogin_Click(object sender, EventArgs e)
@@ -24,8 +25,11 @@ namespace TexasHold_Em
             greetings.Show();
             this.Close();
             this.Dispose();
-            
           
+        }
+
+        private void tb_name_TextChanged(object sender, EventArgs e)
+        {
         }
     }
 }

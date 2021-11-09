@@ -32,12 +32,14 @@ namespace TexasHold_Em
             this.lbl_name = new System.Windows.Forms.Label();
             this.lbl_password = new System.Windows.Forms.Label();
             this.btn_plogin = new System.Windows.Forms.Button();
+            this.tb_name = new System.Windows.Forms.TextBox();
+            this.tb_pw = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // lbl_name
             // 
             this.lbl_name.AutoSize = true;
-            this.lbl_name.Location = new System.Drawing.Point(45, 43);
+            this.lbl_name.Location = new System.Drawing.Point(12, 40);
             this.lbl_name.Name = "lbl_name";
             this.lbl_name.Size = new System.Drawing.Size(35, 13);
             this.lbl_name.TabIndex = 0;
@@ -46,7 +48,7 @@ namespace TexasHold_Em
             // lbl_password
             // 
             this.lbl_password.AutoSize = true;
-            this.lbl_password.Location = new System.Drawing.Point(27, 87);
+            this.lbl_password.Location = new System.Drawing.Point(12, 82);
             this.lbl_password.Name = "lbl_password";
             this.lbl_password.Size = new System.Drawing.Size(53, 13);
             this.lbl_password.TabIndex = 1;
@@ -62,11 +64,28 @@ namespace TexasHold_Em
             this.btn_plogin.UseVisualStyleBackColor = true;
             this.btn_plogin.Click += new System.EventHandler(this.btn_plogin_Click);
             // 
+            // tb_name
+            // 
+            this.tb_name.Location = new System.Drawing.Point(71, 37);
+            this.tb_name.Name = "tb_name";
+            this.tb_name.Size = new System.Drawing.Size(130, 20);
+            this.tb_name.TabIndex = 3;
+            this.tb_name.TextChanged += new System.EventHandler(this.tb_name_TextChanged);
+            // 
+            // tb_pw
+            // 
+            this.tb_pw.Location = new System.Drawing.Point(71, 79);
+            this.tb_pw.Name = "tb_pw";
+            this.tb_pw.Size = new System.Drawing.Size(130, 20);
+            this.tb_pw.TabIndex = 4;
+            // 
             // f_plogin
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(205, 336);
+            this.ClientSize = new System.Drawing.Size(221, 336);
+            this.Controls.Add(this.tb_pw);
+            this.Controls.Add(this.tb_name);
             this.Controls.Add(this.btn_plogin);
             this.Controls.Add(this.lbl_password);
             this.Controls.Add(this.lbl_name);
@@ -82,5 +101,7 @@ namespace TexasHold_Em
         private System.Windows.Forms.Label lbl_name;
         private System.Windows.Forms.Label lbl_password;
         private System.Windows.Forms.Button btn_plogin;
+        private System.Windows.Forms.TextBox tb_pw;
+        public System.Windows.Forms.TextBox tb_name;
     }
 }
