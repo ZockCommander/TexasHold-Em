@@ -10,8 +10,10 @@ using System.Windows.Forms;
 
 namespace TexasHold_Em
 {
+    
     public partial class f_plogin : Form
     {
+        
         public f_plogin()
         {
             InitializeComponent();
@@ -30,6 +32,8 @@ namespace TexasHold_Em
 
         private void tb_name_TextChanged(object sender, EventArgs e)
         {
-        }
+          
+
     }
+}
 }

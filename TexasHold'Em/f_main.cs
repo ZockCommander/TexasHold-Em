@@ -25,14 +25,14 @@ namespace TexasHold_Em
             f_greetings greeting = new f_greetings();
             this.Close();
             greeting.Show();
-        }
+        } 
 
         private void t_pm_Tick(object sender, EventArgs e)
         {
           //Checks if the 30 sec have run out
             if(t_pm.Interval == 30000)
             {
-                MessageBox.Show("The time has run out!", "Time", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                //If player1 does something time has to be reset and the pc starts if not after 30 sec pc starts
             }
 
         }

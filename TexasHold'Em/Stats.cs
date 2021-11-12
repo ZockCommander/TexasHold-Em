@@ -27,9 +27,14 @@ namespace TexasHold_Em
 
         private void f_stats_Load(object sender, EventArgs e)
         {
-            f_plogin f_Plogin = new f_plogin();
-           
+            //Checks in Database which player is logged in and puts his or her name in stats
             
+            
+        }
+
+        private void pb_lvl_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

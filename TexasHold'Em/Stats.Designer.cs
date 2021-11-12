@@ -91,6 +91,7 @@ namespace TexasHold_Em
             this.pb_lvl.Name = "pb_lvl";
             this.pb_lvl.Size = new System.Drawing.Size(629, 21);
             this.pb_lvl.TabIndex = 5;
+            this.pb_lvl.Click += new System.EventHandler(this.pb_lvl_Click);
             // 
             // lbl_pname
             // 

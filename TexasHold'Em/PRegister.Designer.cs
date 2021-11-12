@@ -88,6 +88,7 @@ namespace TexasHold_Em
             this.tb_pw.Name = "tb_pw";
             this.tb_pw.Size = new System.Drawing.Size(158, 20);
             this.tb_pw.TabIndex = 5;
+            this.tb_pw.TextChanged += new System.EventHandler(this.tb_pw_TextChanged);
             // 
             // tb_pwconfirm
             // 
