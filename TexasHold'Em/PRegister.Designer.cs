@@ -53,7 +53,7 @@ namespace TexasHold_Em
             this.lbl_name.AutoSize = true;
             this.lbl_name.Location = new System.Drawing.Point(12, 42);
             this.lbl_name.Name = "lbl_name";
-            this.lbl_name.Size = new System.Drawing.Size(35, 13);
+            this.lbl_name.Size = new System.Drawing.Size(41, 15);
             this.lbl_name.TabIndex = 1;
             this.lbl_name.Text = "Name";
             // 
@@ -62,7 +62,7 @@ namespace TexasHold_Em
             this.lbl_password.AutoSize = true;
             this.lbl_password.Location = new System.Drawing.Point(12, 66);
             this.lbl_password.Name = "lbl_password";
-            this.lbl_password.Size = new System.Drawing.Size(53, 13);
+            this.lbl_password.Size = new System.Drawing.Size(61, 15);
             this.lbl_password.TabIndex = 2;
             this.lbl_password.Text = "Password";
             // 
@@ -71,7 +71,7 @@ namespace TexasHold_Em
             this.lbl_confirm.AutoSize = true;
             this.lbl_confirm.Location = new System.Drawing.Point(12, 90);
             this.lbl_confirm.Name = "lbl_confirm";
-            this.lbl_confirm.Size = new System.Drawing.Size(42, 13);
+            this.lbl_confirm.Size = new System.Drawing.Size(50, 15);
             this.lbl_confirm.TabIndex = 3;
             this.lbl_confirm.Text = "Confirm";
             // 
@@ -81,6 +81,7 @@ namespace TexasHold_Em
             this.tb_name.Name = "tb_name";
             this.tb_name.Size = new System.Drawing.Size(158, 20);
             this.tb_name.TabIndex = 4;
+            this.tb_name.TextChanged += new System.EventHandler(this.tb_name_TextChanged);
             // 
             // tb_pw
             // 
@@ -96,6 +97,7 @@ namespace TexasHold_Em
             this.tb_pwconfirm.Name = "tb_pwconfirm";
             this.tb_pwconfirm.Size = new System.Drawing.Size(158, 20);
             this.tb_pwconfirm.TabIndex = 6;
+            this.tb_pwconfirm.TextChanged += new System.EventHandler(this.tb_pwconfirm_TextChanged);
             // 
             // f_pregister
             // 

@@ -32,8 +32,14 @@ namespace TexasHold_Em
 
         private void tb_name_TextChanged(object sender, EventArgs e)
         {
-          
+            tb_name.MaxLength = 12;
 
     }
-}
+
+        private void tb_pw_TextChanged(object sender, EventArgs e)
+        {
+            tb_pw.PasswordChar = '*';
+            tb_pw.TextAlign = HorizontalAlignment.Left;
+        }
+    }
 }
