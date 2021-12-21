@@ -1,7 +1,7 @@
 ﻿
 namespace TexasHold_Em
 {
-    partial class f_stats
+    partial class F_stats
     {
         /// <summary>
         /// Required designer variable.
@@ -35,7 +35,7 @@ namespace TexasHold_Em
             this.lbl_lvl = new System.Windows.Forms.Label();
             this.lbl_bal = new System.Windows.Forms.Label();
             this.lbl_pg = new System.Windows.Forms.Label();
-            this.pb_lvl = new System.Windows.Forms.ProgressBar();
+            this.Pb_lvl = new System.Windows.Forms.ProgressBar();
             this.lbl_pname = new System.Windows.Forms.Label();
             this.t_ts1 = new System.Windows.Forms.Timer(this.components);
             this.SuspendLayout();
@@ -43,13 +43,13 @@ namespace TexasHold_Em
             // btn_back
             // 
             this.btn_back.Location = new System.Drawing.Point(836, 423);
-            this.btn_back.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btn_back.Margin = new System.Windows.Forms.Padding(4);
             this.btn_back.Name = "btn_back";
             this.btn_back.Size = new System.Drawing.Size(176, 91);
             this.btn_back.TabIndex = 0;
             this.btn_back.Text = "Back";
             this.btn_back.UseVisualStyleBackColor = true;
-            this.btn_back.Click += new System.EventHandler(this.btn_back_Click);
+            this.btn_back.Click += new System.EventHandler(this.Btn_back_Click);
             // 
             // lbl_name
             // 
@@ -91,15 +91,15 @@ namespace TexasHold_Em
             this.lbl_pg.TabIndex = 4;
             this.lbl_pg.Text = "Played Games";
             // 
-            // pb_lvl
+            // Pb_lvl
             // 
-            this.pb_lvl.ForeColor = System.Drawing.Color.Lime;
-            this.pb_lvl.Location = new System.Drawing.Point(53, 139);
-            this.pb_lvl.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.pb_lvl.Maximum = 1000000;
-            this.pb_lvl.Name = "pb_lvl";
-            this.pb_lvl.Size = new System.Drawing.Size(839, 26);
-            this.pb_lvl.TabIndex = 5;
+            this.Pb_lvl.ForeColor = System.Drawing.Color.Lime;
+            this.Pb_lvl.Location = new System.Drawing.Point(53, 139);
+            this.Pb_lvl.Margin = new System.Windows.Forms.Padding(4);
+            this.Pb_lvl.Maximum = 1000000;
+            this.Pb_lvl.Name = "Pb_lvl";
+            this.Pb_lvl.Size = new System.Drawing.Size(839, 26);
+            this.Pb_lvl.TabIndex = 5;
             // 
             // lbl_pname
             // 
@@ -114,24 +114,24 @@ namespace TexasHold_Em
             // 
             this.t_ts1.Enabled = true;
             this.t_ts1.Interval = 1000;
-            this.t_ts1.Tick += new System.EventHandler(this.t_ts1_Tick);
+            this.t_ts1.Tick += new System.EventHandler(this.Timer_ts1_Tick);
             // 
-            // f_stats
+            // F_stats
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1067, 554);
             this.Controls.Add(this.lbl_pname);
-            this.Controls.Add(this.pb_lvl);
+            this.Controls.Add(this.Pb_lvl);
             this.Controls.Add(this.lbl_pg);
             this.Controls.Add(this.lbl_bal);
             this.Controls.Add(this.lbl_lvl);
             this.Controls.Add(this.lbl_name);
             this.Controls.Add(this.btn_back);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.Name = "f_stats";
+            this.Margin = new System.Windows.Forms.Padding(4);
+            this.Name = "F_stats";
             this.Text = "Stats";
-            this.Load += new System.EventHandler(this.f_stats_Load);
+            this.Load += new System.EventHandler(this.F_stats_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -144,7 +144,7 @@ namespace TexasHold_Em
         private System.Windows.Forms.Label lbl_lvl;
         private System.Windows.Forms.Label lbl_bal;
         private System.Windows.Forms.Label lbl_pg;
-        private System.Windows.Forms.ProgressBar pb_lvl;
+        private System.Windows.Forms.ProgressBar Pb_lvl;
         public System.Windows.Forms.Label lbl_pname;
         private System.Windows.Forms.Timer t_ts1;
     }

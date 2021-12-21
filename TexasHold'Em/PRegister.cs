@@ -17,7 +17,7 @@ namespace TexasHold_Em
             InitializeComponent();
         }
 
-        private void btn_register_Click(object sender, EventArgs e)
+        private void Btn_register_Click(object sender, EventArgs e)
         {
             //Checks if the passwords match, the name of the player is filled in and the passwords do not have an abnormal length and a minimum length
             if (tb_pwconfirm.Text == tb_pw.Text &&tb_pw.Text.Length >= 8 && tb_pwconfirm.Text.Length >= 8)
@@ -25,6 +25,7 @@ namespace TexasHold_Em
                 MessageBox.Show("You have succesfully registered yourself!", "Registered", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 f_login login = new f_login();
                 this.Close();
+                login.Show();
             }
             else
             {
@@ -33,7 +34,7 @@ namespace TexasHold_Em
          
         }
 
-        private void tb_pw_TextChanged(object sender, EventArgs e)
+        private void Tb_pw_TextChanged(object sender, EventArgs e)
         {
             tb_pw.PasswordChar = '*';
             //sets * as the password you see from outside
@@ -41,13 +42,13 @@ namespace TexasHold_Em
             //aligns the text on the left side of the box
         }
 
-        private void tb_pwconfirm_TextChanged(object sender, EventArgs e)
+        private void Tb_pwconfirm_TextChanged(object sender, EventArgs e)
         {          
             tb_pwconfirm.PasswordChar = '*';
             tb_pwconfirm.TextAlign = HorizontalAlignment.Left;
         }
 
-        private void tb_name_TextChanged(object sender, EventArgs e)
+        private void Tb_name_TextChanged(object sender, EventArgs e)
         {
             tb_name.MaxLength = 12;
         }

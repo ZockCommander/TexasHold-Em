@@ -46,7 +46,7 @@ namespace TexasHold_Em
             this.btn_register.TabIndex = 0;
             this.btn_register.Text = "Register";
             this.btn_register.UseVisualStyleBackColor = true;
-            this.btn_register.Click += new System.EventHandler(this.btn_register_Click);
+            this.btn_register.Click += new System.EventHandler(this.Btn_register_Click);
             // 
             // lbl_name
             // 
@@ -81,7 +81,7 @@ namespace TexasHold_Em
             this.tb_name.Name = "tb_name";
             this.tb_name.Size = new System.Drawing.Size(158, 20);
             this.tb_name.TabIndex = 4;
-            this.tb_name.TextChanged += new System.EventHandler(this.tb_name_TextChanged);
+            this.tb_name.TextChanged += new System.EventHandler(this.Tb_name_TextChanged);
             // 
             // tb_pw
             // 
@@ -89,7 +89,7 @@ namespace TexasHold_Em
             this.tb_pw.Name = "tb_pw";
             this.tb_pw.Size = new System.Drawing.Size(158, 20);
             this.tb_pw.TabIndex = 5;
-            this.tb_pw.TextChanged += new System.EventHandler(this.tb_pw_TextChanged);
+            this.tb_pw.TextChanged += new System.EventHandler(this.Tb_pw_TextChanged);
             // 
             // tb_pwconfirm
             // 
@@ -97,7 +97,7 @@ namespace TexasHold_Em
             this.tb_pwconfirm.Name = "tb_pwconfirm";
             this.tb_pwconfirm.Size = new System.Drawing.Size(158, 20);
             this.tb_pwconfirm.TabIndex = 6;
-            this.tb_pwconfirm.TextChanged += new System.EventHandler(this.tb_pwconfirm_TextChanged);
+            this.tb_pwconfirm.TextChanged += new System.EventHandler(this.Tb_pwconfirm_TextChanged);
             // 
             // f_pregister
             // 

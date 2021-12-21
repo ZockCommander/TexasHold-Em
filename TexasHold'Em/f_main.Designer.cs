@@ -90,13 +90,13 @@ namespace TexasHold_Em
             this.btn_leave.TabIndex = 5;
             this.btn_leave.Text = "Leave";
             this.btn_leave.UseVisualStyleBackColor = false;
-            this.btn_leave.Click += new System.EventHandler(this.btn_leave_Click);
+            this.btn_leave.Click += new System.EventHandler(this.Btn_leave_Click);
             // 
             // t_pm
             // 
             this.t_pm.Enabled = true;
             this.t_pm.Interval = 30000;
-            this.t_pm.Tick += new System.EventHandler(this.t_pm_Tick);
+            this.t_pm.Tick += new System.EventHandler(this.Timer_pm_Tick);
             // 
             // f_main
             // 
