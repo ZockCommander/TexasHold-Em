@@ -36,17 +36,23 @@ namespace TexasHold_Em
             // 
             // btn_back
             // 
+            this.btn_back.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(47)))), ((int)(((byte)(52)))));
+            this.btn_back.FlatAppearance.BorderSize = 0;
+            this.btn_back.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_back.ForeColor = System.Drawing.Color.White;
             this.btn_back.Location = new System.Drawing.Point(663, 369);
             this.btn_back.Name = "btn_back";
             this.btn_back.Size = new System.Drawing.Size(111, 66);
             this.btn_back.TabIndex = 0;
             this.btn_back.Text = "Back";
-            this.btn_back.UseVisualStyleBackColor = true;
+            this.btn_back.UseVisualStyleBackColor = false;
             this.btn_back.Click += new System.EventHandler(this.btn_back_Click);
             // 
             // tb_htp
             // 
+            this.tb_htp.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(47)))), ((int)(((byte)(52)))));
             this.tb_htp.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tb_htp.ForeColor = System.Drawing.Color.White;
             this.tb_htp.Location = new System.Drawing.Point(121, 51);
             this.tb_htp.Multiline = true;
             this.tb_htp.Name = "tb_htp";
@@ -58,9 +64,11 @@ namespace TexasHold_Em
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(55)))), ((int)(((byte)(62)))), ((int)(((byte)(70)))));
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.tb_htp);
             this.Controls.Add(this.btn_back);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "f_htp";
             this.Text = "How to Play";
             this.ResumeLayout(false);

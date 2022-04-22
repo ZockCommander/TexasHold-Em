@@ -30,7 +30,6 @@ namespace TexasHold_Em
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(f_main));
             this.btn_call = new System.Windows.Forms.Button();
             this.btn_fold = new System.Windows.Forms.Button();
             this.btn_bet = new System.Windows.Forms.Button();
@@ -41,8 +40,10 @@ namespace TexasHold_Em
             // 
             // btn_call
             // 
-            this.btn_call.BackColor = System.Drawing.Color.ForestGreen;
-            this.btn_call.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.btn_call.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(47)))), ((int)(((byte)(52)))));
+            this.btn_call.FlatAppearance.BorderSize = 0;
+            this.btn_call.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_call.ForeColor = System.Drawing.Color.White;
             this.btn_call.Location = new System.Drawing.Point(246, 530);
             this.btn_call.Name = "btn_call";
             this.btn_call.Size = new System.Drawing.Size(147, 105);
@@ -52,7 +53,10 @@ namespace TexasHold_Em
             // 
             // btn_fold
             // 
-            this.btn_fold.BackColor = System.Drawing.Color.ForestGreen;
+            this.btn_fold.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(47)))), ((int)(((byte)(52)))));
+            this.btn_fold.FlatAppearance.BorderSize = 0;
+            this.btn_fold.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_fold.ForeColor = System.Drawing.Color.White;
             this.btn_fold.Location = new System.Drawing.Point(399, 530);
             this.btn_fold.Name = "btn_fold";
             this.btn_fold.Size = new System.Drawing.Size(147, 105);
@@ -62,7 +66,10 @@ namespace TexasHold_Em
             // 
             // btn_bet
             // 
-            this.btn_bet.BackColor = System.Drawing.Color.ForestGreen;
+            this.btn_bet.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(47)))), ((int)(((byte)(52)))));
+            this.btn_bet.FlatAppearance.BorderSize = 0;
+            this.btn_bet.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_bet.ForeColor = System.Drawing.Color.White;
             this.btn_bet.Location = new System.Drawing.Point(552, 530);
             this.btn_bet.Name = "btn_bet";
             this.btn_bet.Size = new System.Drawing.Size(147, 105);
@@ -72,8 +79,10 @@ namespace TexasHold_Em
             // 
             // btn_check
             // 
-            this.btn_check.BackColor = System.Drawing.Color.ForestGreen;
-            this.btn_check.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.btn_check.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(47)))), ((int)(((byte)(52)))));
+            this.btn_check.FlatAppearance.BorderSize = 0;
+            this.btn_check.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_check.ForeColor = System.Drawing.Color.White;
             this.btn_check.Location = new System.Drawing.Point(705, 530);
             this.btn_check.Name = "btn_check";
             this.btn_check.Size = new System.Drawing.Size(147, 105);
@@ -83,7 +92,10 @@ namespace TexasHold_Em
             // 
             // btn_leave
             // 
-            this.btn_leave.BackColor = System.Drawing.Color.ForestGreen;
+            this.btn_leave.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(47)))), ((int)(((byte)(52)))));
+            this.btn_leave.FlatAppearance.BorderSize = 0;
+            this.btn_leave.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_leave.ForeColor = System.Drawing.Color.White;
             this.btn_leave.Location = new System.Drawing.Point(858, 530);
             this.btn_leave.Name = "btn_leave";
             this.btn_leave.Size = new System.Drawing.Size(147, 105);
@@ -102,8 +114,7 @@ namespace TexasHold_Em
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.DarkOliveGreen;
-            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(55)))), ((int)(((byte)(62)))), ((int)(((byte)(70)))));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1246, 647);
             this.ControlBox = false;
@@ -112,7 +123,9 @@ namespace TexasHold_Em
             this.Controls.Add(this.btn_bet);
             this.Controls.Add(this.btn_fold);
             this.Controls.Add(this.btn_call);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "f_main";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Main";
             this.ResumeLayout(false);
 

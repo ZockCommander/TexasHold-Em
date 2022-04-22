@@ -22,7 +22,7 @@ namespace TexasHold_Em
         private void btn_Guest_Click(object sender, EventArgs e)
         {
             //If you play as Guest you are immidiately thrown to the playing groundss
-            f_main main = new f_main();
+            f_main main = new f_main("guest");
             this.Hide();
             main.Show();
            
@@ -41,15 +41,14 @@ namespace TexasHold_Em
             //Let's the Player login to the main menu if his account data is provided in the Database
             f_plogin plogin = new f_plogin();
             plogin.Show();
-            this.Hide();
 
         }
 
         private void btn_register_Click(object sender, EventArgs e)
         {
-            //The new Player can create an Account which will be automatically saved into the Database
+            //The new Player can create an Account which will automatically be saved into the Database
             f_pregister pregister = new f_pregister();
-            pregister.Show();
+            pregister.Show();  
         }
     }
 }

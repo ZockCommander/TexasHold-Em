@@ -40,43 +40,52 @@ namespace TexasHold_Em
             // 
             // btn_register
             // 
-            this.btn_register.Location = new System.Drawing.Point(60, 261);
+            this.btn_register.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(47)))), ((int)(((byte)(52)))));
+            this.btn_register.FlatAppearance.BorderSize = 0;
+            this.btn_register.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_register.ForeColor = System.Drawing.Color.White;
+            this.btn_register.Location = new System.Drawing.Point(34, 268);
             this.btn_register.Name = "btn_register";
             this.btn_register.Size = new System.Drawing.Size(154, 109);
             this.btn_register.TabIndex = 0;
             this.btn_register.Text = "Register";
-            this.btn_register.UseVisualStyleBackColor = true;
+            this.btn_register.UseVisualStyleBackColor = false;
             this.btn_register.Click += new System.EventHandler(this.Btn_register_Click);
             // 
             // lbl_name
             // 
             this.lbl_name.AutoSize = true;
+            this.lbl_name.ForeColor = System.Drawing.Color.White;
             this.lbl_name.Location = new System.Drawing.Point(12, 42);
             this.lbl_name.Name = "lbl_name";
-            this.lbl_name.Size = new System.Drawing.Size(41, 15);
+            this.lbl_name.Size = new System.Drawing.Size(35, 13);
             this.lbl_name.TabIndex = 1;
             this.lbl_name.Text = "Name";
             // 
             // lbl_password
             // 
             this.lbl_password.AutoSize = true;
+            this.lbl_password.ForeColor = System.Drawing.Color.White;
             this.lbl_password.Location = new System.Drawing.Point(12, 66);
             this.lbl_password.Name = "lbl_password";
-            this.lbl_password.Size = new System.Drawing.Size(61, 15);
+            this.lbl_password.Size = new System.Drawing.Size(53, 13);
             this.lbl_password.TabIndex = 2;
             this.lbl_password.Text = "Password";
             // 
             // lbl_confirm
             // 
             this.lbl_confirm.AutoSize = true;
+            this.lbl_confirm.ForeColor = System.Drawing.Color.White;
             this.lbl_confirm.Location = new System.Drawing.Point(12, 90);
             this.lbl_confirm.Name = "lbl_confirm";
-            this.lbl_confirm.Size = new System.Drawing.Size(50, 15);
+            this.lbl_confirm.Size = new System.Drawing.Size(42, 13);
             this.lbl_confirm.TabIndex = 3;
             this.lbl_confirm.Text = "Confirm";
             // 
             // tb_name
             // 
+            this.tb_name.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(47)))), ((int)(((byte)(52)))));
+            this.tb_name.ForeColor = System.Drawing.Color.White;
             this.tb_name.Location = new System.Drawing.Point(79, 39);
             this.tb_name.Name = "tb_name";
             this.tb_name.Size = new System.Drawing.Size(158, 20);
@@ -85,6 +94,8 @@ namespace TexasHold_Em
             // 
             // tb_pw
             // 
+            this.tb_pw.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(47)))), ((int)(((byte)(52)))));
+            this.tb_pw.ForeColor = System.Drawing.Color.White;
             this.tb_pw.Location = new System.Drawing.Point(79, 63);
             this.tb_pw.Name = "tb_pw";
             this.tb_pw.Size = new System.Drawing.Size(158, 20);
@@ -93,6 +104,8 @@ namespace TexasHold_Em
             // 
             // tb_pwconfirm
             // 
+            this.tb_pwconfirm.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(47)))), ((int)(((byte)(52)))));
+            this.tb_pwconfirm.ForeColor = System.Drawing.Color.White;
             this.tb_pwconfirm.Location = new System.Drawing.Point(79, 87);
             this.tb_pwconfirm.Name = "tb_pwconfirm";
             this.tb_pwconfirm.Size = new System.Drawing.Size(158, 20);
@@ -103,6 +116,7 @@ namespace TexasHold_Em
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(55)))), ((int)(((byte)(62)))), ((int)(((byte)(70)))));
             this.ClientSize = new System.Drawing.Size(249, 389);
             this.Controls.Add(this.tb_pwconfirm);
             this.Controls.Add(this.tb_pw);
@@ -111,7 +125,9 @@ namespace TexasHold_Em
             this.Controls.Add(this.lbl_password);
             this.Controls.Add(this.lbl_name);
             this.Controls.Add(this.btn_register);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "f_pregister";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "PRegister";
             this.ResumeLayout(false);
             this.PerformLayout();
